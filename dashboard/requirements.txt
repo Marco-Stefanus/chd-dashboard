@@ -1,0 +1,18 @@
+# --- Dashboard ---
+streamlit>=1.50
+pandas
+numpy
+plotly
+joblib
+scikit-learn
+
+# --- Model (WAJIB sama versinya dengan environment saat training di notebook) ---
+# Jalankan di environment notebook:  pip freeze | findstr /i "xgboost interpret pytorch-tabnet torch scikit-learn"
+# lalu ganti baris di bawah dengan versi yang sama, mis. xgboost==2.1.1
+xgboost
+interpret
+pytorch-tabnet
+
+# PyTorch versi CPU (jauh lebih kecil dari versi CUDA; cukup untuk inferensi)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
